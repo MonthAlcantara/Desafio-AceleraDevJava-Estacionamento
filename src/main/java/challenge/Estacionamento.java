@@ -31,12 +31,8 @@ public class Estacionamento {
     }
 
     private Boolean verificarTodosSeniors() {
-        for (Carro carros : listaCarrosEstacionados) {
-            if (carros.getMotorista().getIdade() < 55) {
-                return false;
-            }
-        }
-        return true;
+        return listaCarrosEstacionados.stream()
+                .noneMatch(c -> c.getMotorista().getIdade() < 55);
     }
 
     private Boolean verificarRequisitos(Carro carro) {

@@ -6,11 +6,8 @@ import java.util.Objects;
 public class Motorista {
 
     private final String nome;
-
     private final int idade;
-
     private final int pontos;
-
     private final String habilitacao;
 
     private Motorista(String nome, int idade, int pontos, String habilitacao) {

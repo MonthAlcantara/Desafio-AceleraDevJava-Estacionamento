@@ -5,9 +5,7 @@ import java.util.Objects;
 public class Carro {
 
     private final Motorista motorista;
-
     private final String placa;
-
     private final Cor cor;
 
     private Carro(Motorista motorista, String placa, Cor cor) {
